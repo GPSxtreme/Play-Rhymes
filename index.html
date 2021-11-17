@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Modal window</title>
+  </head>
+  <body>
+    <button class="darkModeBtn">Switch theme</button>
+
+    <!-- BUTTONS ON HOME PAGE -->
+    <div class="buttonsContainer">
+      <button class="modal__button" role="button">Fish song</button>
+      <button class="modal__button" role="button">ABC song</button>
+      <button class="modal__button" role="button">Sheep song</button>
+    </div>
+    <!-- MODAL  -->
+    <div class="modal modal--hidden">
+      <div class="modal__head">
+        <h1 class="modal__heading">1234 fish</h1>
+        <button class="modal__closeBtn">&times;</button>
+      </div>
+      <p class="modal__para">
+        One, two, three, four, five, Once I caught a fish alive, Six, seven, eight, nine, ten, Then I let go again. Why
+        did you let it go? Because it bit my finger so. Which finger did it bite? This little finger on the right
+      </p>
+      <button class="modal__speakBtn" role="button" onclick="play()">Speak</button>
+    </div>
+    <!-- INJECT SCRIPT -->
+    <script src="app.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=KwqmOONo"></script>
+  </body>
+</html>
